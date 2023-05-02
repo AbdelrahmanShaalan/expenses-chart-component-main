@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="/dist/output.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+</head>
+<body class="font-dmSans text-lg min-h-screen sm:h-screen bg-cream flex justify-center items-center flex-col gap-5 p-5 sm:p-0">
+  <div class="parent sm:w-[475px] flex flex-col gap-5">
+    <div class="bg-softRed p-5 sm:p-7 flex justify-between rounded-lg lg:rounded-2xl">
+      <div class="flex flex-col gap-2">
+        <span class="text-veryPaleOrange">My balance</span>
+        <span class="text-veryPaleOrange text-3xl font-bold">$921.48</span>
+      </div>
+      <figure class="flex justify-center items-center">
+        <img src="images/logo.svg" alt="logo">
+      </figure>
+    </div>
+    <div class="bg-veryPaleOrange grow p-5 sm:p-8 rounded-lg lg:rounded-2xl">
+      <div class="flex flex-col">
+        <span class="text-darkBrown text-3xl font-bold">Spending - Last 7 days</span>
+        <table class="charts-css column hide-data show-labels data-spacing-5">
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td class="" style="--size: calc(30/100);--color: hsl(10, 79%, 65%);"><span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="" style="--size: calc(60/100);--color: hsl(10, 79%, 65%);"><span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="" style="--size: calc(80/100);--color: hsl(186, 34%, 60%);"><span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="" style="--size: calc(55/100);--color: hsl(10, 79%, 65%);"><span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="" style="--size: calc(40/100);--color: hsl(10, 79%, 65%);"><span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="" style="--size: calc(75/100);--color: hsl(10, 79%, 65%);"><span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="" style="--size: calc(50/100);--color: hsl(10, 79%, 65%);"><span></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span class="block w-full h-[0.5px] bg-cream my-5"></span>
+      <div class="flex items-center justify-between gap-12">
+        <div class="flex flex-col gap-1">
+          <span class="text-mediumBrown">Total this month</span>
+          <span class="text-darkBrown text-4xl font-bold">$478.33</span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-end text-darkBrown font-bold">+2.4%</span>
+          <span class="text-mediumBrown">from last month</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution text-xs sm:text-lg text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-[#3e52a3]" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/AbdelrahmanShaalan" class="text-[#3e52a3]">Abdelrahman Shaalan</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
